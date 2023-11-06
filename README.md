@@ -20,7 +20,7 @@ The thesis focuses on analyzing sustainability reports from DAX 40 companies to 
 The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
 
 <div align="center">
-    <img src="https://latex.codecogs.com/png.latex?\dpi{400}&space;\bg_white&space;\large&space;\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\min(SV))}{\max(SV)&space;-&space;\min(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\min(SDGA))}{\max(SDGA)&space;-&space;\min(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\min(ESGS))}{\max(ESGS)&space;-&space;\min(ESGS)}&space;&plus;&space;w_4&space;CS" alt="GreenwashingTendency" width="600">
+    <img src="https://latex.codecogs.com/png.latex?\dpi{700}&space;\bg_white&space;\large&space;\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\min(SV))}{\max(SV)&space;-&space;\min(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\min(SDGA))}{\max(SDGA)&space;-&space;\min(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\min(ESGS))}{\max(ESGS)&space;-&space;\min(ESGS)}&space;&plus;&space;w_4&space;CS" alt="GreenwashingTendency" width="900">
 </div>
 
 * SV: Sentiment Value
