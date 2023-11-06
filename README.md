@@ -1,7 +1,7 @@
 # Bachelorarbeit: Data-driven Analysis of Greenwashing in Sustainability Reports
 
 ## Overview
-This repository contains the code and documentation for my bachelor's thesis titled "On the Trail of Greenwashing: A Data-driven Examination of Sustainability Reports from DAX 40 Companies with NLP." The thesis aims to explore and identify potential greenwashing tendencies in sustainability reports using Natural Language Processing (NLP) techniques.
+This repository contains the code and documentation for my bachelor's thesis titled "Tracking Greenwashing: A Data-driven Analysis of Sustainability Reports from DAX 40 Companies using NLP" The thesis aims to explore and identify potential greenwashing tendencies in sustainability reports using Natural Language Processing (NLP) techniques.
 
 ## Table of Contents
 - [Introduction](#introduction)
