@@ -18,12 +18,16 @@ The thesis focuses on analyzing sustainability reports from DAX 40 companies to 
 
 ## Methodology
 The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
-GreenwashingTendency = w1 * (SentimentValue - min(SV)) / (max(SV) - min(SV)) 
-                     + w2 * (SDGAlignment - min(SDGA)) / (max(SDGA) - min(SDGA)) 
-                     - w3 * (ESGScore - min(ESGS)) / (max(ESGS) - min(ESGS)) 
-                     + w4 * CompanySize
+GreenwashingTendency = w₁ * (SV - min(SV)) / (max(SV) - min(SV))  
+                     + w₂ * (SDGA - min(SDGA)) / (max(SDGA) - min(SDGA)) 
+                     - w₃ * (ESGS - min(ESGS)) / (max(ESGS) - min(ESGS))
+                     + w₄ * CS
 
-Here, w1, w2, w3, and w4 are the weight factors for the respective components. min() and max() represent the minimum and maximum values of the respective metrics in your dataset.
+* SV: Sentiment Value
+* SDGA: SDG Alignment
+* ESGS: ESG Score        
+* CS: Company Size            
+Here, w₁, w₂, w₃, and w₄ are the weight factors for the respective components. min() and max() represent the minimum and maximum values of the respective metrics in the dataset.
 
 
 ## Folder Structure
