@@ -17,7 +17,14 @@ This repository contains the code and documentation for my bachelor's thesis tit
 The thesis focuses on analyzing sustainability reports from DAX 40 companies to uncover discrepancies between the stated sustainability practices and actual corporate behavior. Employing NLP, the project aims to provide a comprehensive understanding of the language used in these reports and identify potential instances of greenwashing.
 
 ## Methodology
-The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as Sentiment Score * SDG Alignment - ESG Score.
+The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
+GreenwashingTendency = w1 * (SentimentValue - min(SV)) / (max(SV) - min(SV)) 
+                     + w2 * (SDGAlignment - min(SDGA)) / (max(SDGA) - min(SDGA)) 
+                     - w3 * (ESGScore - min(ESGS)) / (max(ESGS) - min(ESGS)) 
+                     + w4 * CompanySize
+
+Here, w1, w2, w3, and w4 are the weight factors for the respective components. min() and max() represent the minimum and maximum values of the respective metrics in your dataset.
+
 
 ## Folder Structure
 - `data/`: Contains the raw and processed data.
