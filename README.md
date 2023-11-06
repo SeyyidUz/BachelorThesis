@@ -19,18 +19,15 @@ The thesis focuses on analyzing sustainability reports from DAX 40 companies to 
 ## Methodology
 The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
 
-<div style="background-color: #f9f9f9; border: 1px solid #ccc; padding: 10px;">
-    
-GreenwashingTendency = w₁ * (SV - min(SV)) / (max(SV) - min(SV))  
-                     + w₂ * (SDGA - min(SDGA)) / (max(SDGA) - min(SDGA)) 
-                     - w₃ * (ESGS - min(ESGS)) / (max(ESGS) - min(ESGS))
-                     + w₄ * CS
+<p align="center">
+    <img src="https://latex.codecogs.com/png.latex?\dpi{300}&space;\bg_white&space;\large&space;\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\min(SV))}{\max(SV)&space;-&space;\min(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\min(SDGA))}{\max(SDGA)&space;-&space;\min(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\min(ESGS))}{\max(ESGS)&space;-&space;\min(ESGS)}&space;&plus;&space;w_4&space;CS" alt="GreenwashingTendency">
+</p>
 
-</div>
 * SV: Sentiment Value
 * SDGA: SDG Alignment
 * ESGS: ESG Score        
 * CS: Company Size            
+
 Here, w₁, w₂, w₃, and w₄ are the weight factors for the respective components. min() and max() represent the minimum and maximum values of the respective metrics in the dataset.
 
 
