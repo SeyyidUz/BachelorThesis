@@ -161,3 +161,6 @@ cython_debug/
 all_enriched_data.csv
 stage 1/data/checkpoints/all_cleaned_data_.csv
 stage 1/2020/output/stage1_output.csv
+stage 1/data/checkpoints/all_cleaned_data_.csv
+stage 1/data/checkpoints/all_enriched_data.csv
+stage 1/data/checkpoints/enriched_cleaned_data_new_2022.csv
