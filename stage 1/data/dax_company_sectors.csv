@@ -1,0 +1,41 @@
+company_name,symbol,market_cap_in_usd_b,country,sector,industry
+SAP SE,SAP,161.41,Germany,Technology,Software—Application
+Siemens AG,SIE,131.0,Germany,Industrials,Specialty Industrial Machinery
+Airbus SE,AIR,113.9,Netherlands,Industrials,Aerospace & Defense
+Deutsche Telekom AG,DTE,106.0,Germany,Communication Services,Telecom Services
+Allianz SE,ALV,91.36,Germany,Financials,Insurance—Diversified
+Mercedes-Benz Group AG,MBG,84.94,Germany,Consumer Discretionary,Auto Manufacturers
+Volkswagen AG,VOW,77.55,Germany,Consumer Discretionary,Auto Manufacturers
+Bayerische Motoren Werke AG,BMW,77.25,Germany,Consumer Discretionary,Auto Manufacturers
+MERCK Kommanditgesellschaft auf Aktien,MRK,70.69,Germany,Healthcare,Drug Manufacturers—Specialty & Generic
+Siemens Healthineers AG,SHL,62.71,Germany,Healthcare,Diagnostics & Research
+Deutsche Post AG,DHL,57.95,Germany,Industrials,Integrated Freight & Logistics
+Bayer AG,BAYN,53.38,Germany,Healthcare,Drug Manufacturers—General
+Infineon Technologies AG,IFX,50.42,Germany,Technology,Semiconductors
+Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München,MUV2,49.87,Germany,Financials,Insurance—Reinsurance
+Dr. Ing. h.c. F. Porsche AG,P911,47.33,Germany,Consumer Discretionary,Auto Manufacturers
+BASF SE,BAS,44.37,Germany,Basic Materials,Chemicals
+adidas AG,ADS,33.41,Germany,Consumer Discretionary,Footwear & Accessories
+E.ON SE,EOAN,32.95,Germany,Utilities,Utilities—Diversified
+RWE AG,RWE,32.35,Germany,Utilities,Utilities—Diversified
+Deutsche Börse AG,DB1,32.32,Germany,Financials,Financial Data & Stock Exchanges
+Henkel AG & Co KGaA,HEN,30.65,Germany,Consumer Staples,Household & Personal Products
+Beiersdorf AG,BEI,28.61,Germany,Consumer Staples,Household & Personal Products
+Daimler Truck Holding AG,DTG,25.43,Germany,Industrials,Farm & Heavy Construction Machinery
+Hannover Rück SE,HNRB,24.66,Germany,Financials,Insurance—Reinsurance
+Sartorius AG,SRT3,21.43,Germany,Healthcare,Medical Instruments & Supplies
+Deutsche Bank AG,DBK,21.13,Germany,Financials,Banks—Regional
+Porsche Automobil Holding SE,PAH3,17.87,Germany,Consumer Discretionary,Auto Manufacturers
+Fresenius SE & Co KGaA,FRE,15.9,Germany,Healthcare,Medical Care Facilities
+Vonovia SE,VNA,15.69,Germany,Real Estate,Real Estate Services
+Continental AG,CON,15.16,Germany,Consumer Discretionary,Auto Parts
+Commerzbank AG,CBK,14.96,Germany,Financials,Banks—Regional
+Symrise AG,SY1,14.81,Germany,Basic Materials,Specialty Chemicals
+Heidelberg Materials AG,HEI,14.65,Germany,Basic Materials,Building Materials
+Siemens Energy AG,ENR,13.82,Germany,Utilities,Utilities—Independent Power Producers
+MTU Aero Engines AG,MTX,13.21,Germany,Industrials,Aerospace & Defense
+Rheinmetall AG,RHM,11.96,Germany,Industrials,Industrial Distribution
+Brenntag AG,BNR,11.76,Germany,Basic Materials,Specialty Chemicals
+Qiagen N.V.,QIA,10.49,Netherlands,Healthcare,Diagnostics & Research
+Covestro AG,1COV,9.87,Germany,Basic Materials,Specialty Chemicals
+Zalando SE,ZAL,6.92,Germany,Consumer Discretionary,Internet Retail
