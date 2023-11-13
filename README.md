@@ -19,17 +19,13 @@ The thesis focuses on analyzing sustainability reports from DAX 40 companies to 
 ## Methodology
 The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
 
-**Greenwashing Tendency Formula:**
-
-<p align="center" style="background-color:red;">
-    <img src="https://latex.codecogs.com/svg.image?\text{GreenwashingTendenz}&space;=&space;\frac{w_1&space;(SV&space;-&space;\text{min}(SV))}{\text{max}(SV)&space;-&space;\text{min}(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\text{min}(SDGA))}{\text{max}(SDGA)&space;-&space;\text{min}(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\text{min}(ESGS))}{\text{max}(ESGS)&space;-&space;\text{min}(ESGS)}&space;&plus;&space;w_4&space;\text{CS}&space;&plus;&space;w_5&space;\text{AbsDiff(SV,&space;ESGS)}&space;&plus;&space;w_6&space;\text{AbsDiff(SDGA,&space;ESGS)}" alt="Greenwashing Tendency Formula" class="formula-image">
-</p>
-
-
-* SV: Sentiment Value
-* SDGA: SDG Alignment
-* ESGS: ESG Score        
-* CS: Company Size            
+> **Greenwashing Tendency Formula:**
+>
+> ![Greenwashing Tendency Formula](https://latex.codecogs.com/svg.image?\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\text{min}(SV))}{\text{max}(SV)&space;-&space;\text{min}(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\text{min}(SDGA))}{\text{max}(SDGA)&space;-&space;\text{min}(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\text{min}(ESGS))}{\text{max}(ESGS)&space;-&space;\text{min}(ESGS)}&space;&plus;&space;w_4&space;\text{CS}&space;&plus;&space;w_5&space;\text{AbsDiff(SV,&space;ESGS)}&space;&plus;&space;w_6&space;\text{AbsDiff(SDGA,&space;ESGS)})
+>
+> * SV: Sentiment Value
+> * SDGA: SDG Alignment
+> * ESGS: ESG Score          
 
 Here, `w1`, `w2`, `w3`, `w4`, `w5`, and `w6` are the weight factors for the respective components. `min()`, `max()`, and `AbsDiff()` represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
 
