@@ -19,9 +19,11 @@ The thesis focuses on analyzing sustainability reports from DAX 40 companies to 
 ## Methodology
 The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
 
-<div align="center">
-    <img src="https://latex.codecogs.com/png.latex?\dpi{700}&space;\bg_white&space;\large&space;\text{GreenwashingTendenz}&space;=&space;\frac{w_1&space;(SV&space;-&space;\min(SV))}{\max(SV)&space;-&space;\min(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\min(SDGA))}{\max(SDGA)&space;-&space;\min(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\min(ESGS))}{\max(ESGS)&space;-&space;\min(ESGS)}&space;&plus;&space;w_4&space;\text{Unternehmensgröße}&space;&plus;&space;w_5&space;\text{AbsDiff(SentimentValue, ESGScore)}&space;&plus;&space;w_6&space;\text{AbsDiff(SDGAlignment, ESGScore)}" alt="GreenwashingTendenz" width="900">
-</div>
+**Greenwashing Tendency Formula:**
+
+\[ 
+\text{GreenwashingTendenz} = \frac{w_1 (SV - \text{min}(SV))}{\text{max}(SV) - \text{min}(SV)} + \frac{w_2 (SDGA - \text{min}(SDGA))}{\text{max}(SDGA) - \text{min}(SDGA)} - \frac{w_3 (ESGS - \text{min}(ESGS))}{\text{max}(ESGS) - \text{min}(ESGS)} + w_4 \text{CS} + w_5 \text{AbsDiff(SV, ESGS)} + w_6 \text{AbsDiff(SDGA, ESGS)}
+\]
 
 
 * SV: Sentiment Value
@@ -29,7 +31,7 @@ The methodology involves data extraction, pre-processing, sentiment analysis, SD
 * ESGS: ESG Score        
 * CS: Company Size            
 
-Here, \(w_1\), \(w_2\), \(w_3\), \(w_4\), \(w_5\), and \(w_6\) are the weight factors for the respective components. \(min()\), \(max()\), and \(AbsDiff()\) represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
+Here, `w1`, `w2`, `w3`, `w4`, `w5`, and `w6` are the weight factors for the respective components. `min()`, `max()`, and `AbsDiff()` represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
 
 
 The individual components of the equation (Sentiment value, SDG-Alignment, ESG-Score & Company Size) could have different effects on the greenwashing tendency. Therefore, it could be useful to apply weight factors that reflect the relative importance of each component.
