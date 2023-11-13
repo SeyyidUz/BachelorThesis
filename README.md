@@ -19,15 +19,17 @@ The thesis focuses on analyzing sustainability reports from DAX 40 companies to 
 ## Methodology
 The methodology involves data extraction, pre-processing, sentiment analysis, SDG alignment assessment using embeddings, and incorporating ESG scores. The final Greenwashing Tendency Score is calculated as: 
 
-> **Greenwashing Tendency Formula:**
->
-> ![Greenwashing Tendency Formula](https://latex.codecogs.com/svg.image?\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\text{min}(SV))}{\text{max}(SV)&space;-&space;\text{min}(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\text{min}(SDGA))}{\text{max}(SDGA)&space;-&space;\text{min}(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\text{min}(ESGS))}{\text{max}(ESGS)&space;-&space;\text{min}(ESGS)}&space;&plus;&space;w_4&space;\text{CS}&space;&plus;&space;w_5&space;\text{AbsDiff(SV,&space;ESGS)}&space;&plus;&space;w_6&space;\text{AbsDiff(SDGA,&space;ESGS)})
->
-> * SV: Sentiment Value
-> * SDGA: SDG Alignment
-> * ESGS: ESG Score          
+ **Greenwashing Tendency Formula:**
 
-Here, `w1`, `w2`, `w3`, `w4`, `w5`, and `w6` are the weight factors for the respective components. `min()`, `max()`, and `AbsDiff()` represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
+![Greenwashing Tendency Formula](https://latex.codecogs.com/svg.latex?\color{red}{\begin{aligned}&space;\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\min(SV))}{\max(SV)&space;-&space;\min(SV)}&space;\\&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\min(SDGA))}{\max(SDGA)&space;-&space;\min(SDGA)}&space;\\&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\min(ESGS))}{\max(ESGS)&space;-&space;\min(ESGS)}&space;\\&space;&plus;&space;w_4&space;\times&space;CS&space;\\&space;&plus;&space;w_5&space;\times&space;\text{AbsDiff}(SV,&space;ESGS)&space;\\&space;&plus;&space;w_6&space;\times&space;\text{AbsDiff}(SDGA,&space;ESGS)&space;\end{aligned}})
+
+
+ Where:
+ * `SV`: Sentiment Value
+ * `SDGA`: SDG Alignment
+ * `ESGS`: ESG Score
+ * `w1`, `w2`, `w3`, `w4`, `w5`, and `w6`: Weight factors for the respective components
+ * `min()`, `max()`, and `AbsDiff()`: Represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
 
 
 The individual components of the equation (Sentiment value, SDG-Alignment, ESG-Score & Company Size) could have different effects on the greenwashing tendency. Therefore, it could be useful to apply weight factors that reflect the relative importance of each component.
