@@ -21,10 +21,9 @@ The methodology involves data extraction, pre-processing, sentiment analysis, SD
 
 **Greenwashing Tendency Formula:**
 
-\[ 
-\text{GreenwashingTendenz} = \frac{w_1 (SV - \text{min}(SV))}{\text{max}(SV) - \text{min}(SV)} + \frac{w_2 (SDGA - \text{min}(SDGA))}{\text{max}(SDGA) - \text{min}(SDGA)} - \frac{w_3 (ESGS - \text{min}(ESGS))}{\text{max}(ESGS) - \text{min}(ESGS)} + w_4 \text{CS} + w_5 \text{AbsDiff(SV, ESGS)} + w_6 \text{AbsDiff(SDGA, ESGS)}
-\]
-
+<p align="center">
+    <img src="https://latex.codecogs.com/svg.image?\text{GreenwashingTendenz}&space;=&space;\frac{w_1&space;(SV&space;-&space;\text{min}(SV))}{\text{max}(SV)&space;-&space;\text{min}(SV)}&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\text{min}(SDGA))}{\text{max}(SDGA)&space;-&space;\text{min}(SDGA)}&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\text{min}(ESGS))}{\text{max}(ESGS)&space;-&space;\text{min}(ESGS)}&space;&plus;&space;w_4&space;\text{CS}&space;&plus;&space;w_5&space;\text{AbsDiff(SV,&space;ESGS)}&space;&plus;&space;w_6&space;\text{AbsDiff(SDGA,&space;ESGS)}" alt="Greenwashing Tendenz Formel">
+</p>
 
 * SV: Sentiment Value
 * SDGA: SDG Alignment
