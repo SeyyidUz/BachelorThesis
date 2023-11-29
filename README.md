@@ -21,24 +21,32 @@ The methodology involves data extraction, pre-processing, sentiment analysis, SD
 
  **Greenwashing Tendency Formula:**
 
-![Greenwashing Tendency Formula](https://latex.codecogs.com/svg.latex?\color{red}{\begin{aligned}&space;\text{GreenwashingTendency}&space;=&space;\frac{w_1&space;(SV&space;-&space;\min(SV))}{\max(SV)&space;-&space;\min(SV)}&space;\\&space;&plus;&space;\frac{w_2&space;(SDGA&space;-&space;\min(SDGA))}{\max(SDGA)&space;-&space;\min(SDGA)}&space;\\&space;-&space;\frac{w_3&space;(ESGS&space;-&space;\min(ESGS))}{\max(ESGS)&space;-&space;\min(ESGS)}&space;\\&space;&plus;&space;w_4&space;\times&space;CS&space;\\&space;&plus;&space;w_5&space;\times&space;\text{AbsDiff}(SV,&space;ESGS)&space;\\&space;&plus;&space;w_6&space;\times&space;\text{AbsDiff}(SDGA,&space;ESGS)&space;\end{aligned}})
+![Greenwashing Tendency Formula](https://latex.codecogs.com/svg.latex?\color{red}{GreenwashingTendency&space;=&space;\frac{w1*&space;SV_{norm}*&space;SDGA_{norm}}{w2*&space;ESGS_{norm}}})
 
+ **with:**
 
- Where:
+![Formula](https://latex.codecogs.com/svg.latex?\color{red}{SV_{norm}&space;:=&space;\left(\frac{SV&space;-&space;min(SV)}{max(SV)&space;-&space;min(SV)}\right)})
+
+![Formula](https://latex.codecogs.com/svg.latex?\color{red}{SDGA_{norm}&space;:=&space;\left(\frac{SDGA&space;-&space;min(SDGA)}{max(SDGA)&space;-&space;min(SDGA)}\right)})
+
+![Formula](https://latex.codecogs.com/svg.latex?\color{red}{ESGS_{norm}&space;:=&space;\left(\frac{ESGS&space;-&space;min(ESGS)}{max(ESGS)&space;-&space;min(ESGS)}\right)})
+
+**Where:**
  * `SV`: Sentiment Value
- * `SDGA`: SDG Alignment
- * `ESGS`: ESG Score
- * `w1`, `w2`, `w3`, `w4`, `w5`, and `w6`: Weight factors for the respective components
- * `min()`, `max()`, and `AbsDiff()`: Represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
+ * `SDGA`: SDG Alignment Value
+ * `ESGS`: ESG Value
+ * `SV_{norm}`: Normalized Sentiment Value
+ * `SDGA_{norm}`: Normalized SDG-Alignment Value
+ * `ESGS_{norm}`: Normalized ESG Value
+ * `w1`and `w2`: Weight factors for the respective components
+ * `min()`and `max()`: Represent the minimum and maximum values of the respective metrics in the dataset
 
 
-The individual components of the equation (Sentiment value, SDG-Alignment, ESG-Score & Company Size) could have different effects on the greenwashing tendency. Therefore, it is useful to apply weight factors that reflect the relative importance of each component.
+The individual components of the equation (Sentiment value, SDG-Alignment & ESG-Score) could have different effects on the greenwashing tendency. Therefore, it is useful to apply weight factors that reflect the relative importance of each component.
 
-Normalizing values is crucial for ensuring a consistent scale and comparability of results. Employing min-max normalization, each value is standardized within the range of 0 to 1, enhancing the coherence of your analysis.
+Normalizing values is crucial for ensuring a consistent scale and comparability of results. Employing min-max normalization, each value is standardized within the range of 0 to 1, enhancing the coherence of my analysis.
 
-Larger companies may possess more resources for marketing and PR, potentially leading to a higher inclination for greenwashing. One way to address this would be to introduce an additional factor into the equation that accounts for the company's size.
-
-
+The Formula shows how much the company is 'exaggerating.' If the ESG score is very low (close to 0), but the Sentiment Value and SDG Alignment are high, this formula would indicate a particularly high level of greenwashing. It emphasizes the discrepancy between the proclaimed and actual performance of a company. Nevertheless, it is important to consider the sensitivity of this formula to extreme values and possibly take appropriate measures for smoothing or limitation.
 
 
 ## Folder Structure
