@@ -32,7 +32,7 @@ The methodology involves data extraction, pre-processing, sentiment analysis, SD
  * `min()`, `max()`, and `AbsDiff()`: Represent the minimum, maximum values, and absolute difference function of the respective metrics in the dataset.
 
 
-The individual components of the equation (Sentiment value, SDG-Alignment, ESG-Score & Company Size) could have different effects on the greenwashing tendency. Therefore, it could be useful to apply weight factors that reflect the relative importance of each component.
+The individual components of the equation (Sentiment value, SDG-Alignment, ESG-Score & Company Size) could have different effects on the greenwashing tendency. Therefore, it is useful to apply weight factors that reflect the relative importance of each component.
 
 Normalizing values is crucial for ensuring a consistent scale and comparability of results. Employing min-max normalization, each value is standardized within the range of 0 to 1, enhancing the coherence of your analysis.
 
