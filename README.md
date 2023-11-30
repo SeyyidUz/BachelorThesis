@@ -25,11 +25,11 @@ The methodology involves data extraction, pre-processing, sentiment analysis, SD
 
  **with:**
 
-![Formula](https://latex.codecogs.com/svg.latex?\color{red}{SV_{norm}&space;:=&space;\left(\frac{SV&space;-&space;min(SV)}{max(SV)&space;-&space;min(SV)}\right)})
+![Formula](https://latex.codecogs.com/svg.latex?\color{red}{SV_{norm}&space;:=&space;\frac{SV&space;-&space;min(SV)}{max(SV)&space;-&space;min(SV)}})
 
-![Formula](https://latex.codecogs.com/svg.latex?\color{red}{SDGA_{norm}&space;:=&space;\left(\frac{SDGA&space;-&space;min(SDGA)}{max(SDGA)&space;-&space;min(SDGA)}\right)})
+![Formula](https://latex.codecogs.com/svg.latex?\color{red}{SDGA_{norm}&space;:=&space;\frac{SDGA&space;-&space;min(SDGA)}{max(SDGA)&space;-&space;min(SDGA)}})
 
-![Formula](https://latex.codecogs.com/svg.latex?\color{red}{ESGS_{norm}&space;:=&space;\left(\frac{ESGS&space;-&space;min(ESGS)}{max(ESGS)&space;-&space;min(ESGS)}\right)})
+![Formula](https://latex.codecogs.com/svg.latex?\color{red}{ESGS_{norm}&space;:=&space;\frac{ESGS&space;-&space;min(ESGS)}{max(ESGS)&space;-&space;min(ESGS)}})
 
 **Where:**
  * SV : Sentiment Value
